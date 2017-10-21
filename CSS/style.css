@@ -1,6 +1,6 @@
 body
 {
-    background-color: grey;
+    background-color: honeydew;
     margin: 0px;
 }
 
@@ -8,7 +8,7 @@ header
 {
     width: 100%;
     height: 180px;
-    background-color: khaki;
+    background-color: #DB1803;
 }
 
 header img
@@ -21,6 +21,7 @@ header img
     margin-bottom: 40px;
     text-align: center;
     background-color: yellowgreen;
+    border-radius: 10px;
 }
 
 header nav
@@ -29,9 +30,44 @@ header nav
     margin-right: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 100px;
+    /*height: 100px;*/
     text-align: left;
-    background-color: darkcyan;
+    background-color: yellowgreen;
+    border-radius: 25px;
+}
+
+
+header nav ul
+{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+header nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+header nav ul li
+{
+    display: inline-block;
+}
+
+
+header nav ul li a:hover
+{
+    color: red;
+}
+
+#flex
+{
+    display: flex;
+    align-items: stretch;
 }
 
 main
@@ -40,39 +76,118 @@ main
     float: left;
     width: 70%;
     text-align: justify;
-    background-color: burlywood;
-    opacity: 0.7
+    background-color: #BED401;
+    opacity: 0.8;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    min-height: 800px;
+}
+
+main form input
+{
+    display: block;
+    margin: 30px 15px 15px 50px;
+
+}
+
+input[type='email']:valid
+{
+    color: green;
+}
+
+
+input[type='radio']
+{
+    display: inline-block;
+}
+
+main form textarea
+{
+    margin: 15px 15px 15px 50px;
+}
+
+main form textarea::placeholder
+{
+    padding: 10px;
+}
+
+
+article
+{
+    padding: 10px;
+}
+
+article:first-child h1
+{
+    color: blue;
+}
+
+main form select
+{
+    display: block;
+    margin: 15px 15px 15px 50px;
+}
+
+
+main form select option
+ {
+     font-size: 1.2em;
+ }
+
+main input:valid+label:after
+{
+    content: "+";
+}
+
+main input:invalid+label:after
+{
+    content: "-";
+}
+
+main input:required+label:after
+{
+    content: "*";
+}
+
+article:nth-child(2)
+{
+    color: red;
+    font-weight: bold;
+}
+
+article:last-child
+{
+    color: green;
+}
+
+h1:before
+
+{
+    content: '\+';
+    color: green;
 }
 
 aside
 {
-    float: left;
+    float: right;
     width:30% ;
-    background-color: purple;
+    background-color:#DD8208;
+    opacity: 0.8;
+    flex-grow: 1;
+    order: 99;
     text-align: center;
+    padding: 20px;
 }
 
 footer
 {
     clear:both;
-    background-color: yellowgreen;
+    background-color: #DB4F08;
     text-align: center;
-}
-
-header nav ul
-{
-    list-style: none;
-    padding: 5px;
-    margin: 0;
-}
-
-header nav ul li a
-{
-    text-decoration: none;
-    color: black;
-}
-
-header nav ul li
-{
-    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
 }
