@@ -25,14 +25,14 @@
     <main>
         <form action="" method="">
 
-            <input name="" type="" placeholder="login" required>
-            <input name="" type="email" placeholder="email" required>
-            <input name="" type="password" placeholder="hasło" required>
-            <input name="" type="tel" placeholder="telefon">
-            <input name="" type="date" placeholder="Data urodzenia">
-            <input name="" type="number" placeholder="Liczba" value="0" required>
-            <input name="" type="submit" value="Wyślij">
-            <input name="" type="reset" value="Wyczyść">
+            <input class="fillin" name="" type="text" placeholder="login" required>
+            <input class="fillin" name="" type="email" placeholder="email" required>
+            <input class="fillin" name="" type="password" placeholder="hasło" required>
+            <input class="fillin" name="" type="tel" placeholder="telefon">
+            <input class="fillin" name="" type="date" placeholder="Data urodzenia">
+            <input class="fillin" name="" type="number" placeholder="Liczba" value="0" required>
+            <input class="fillin" name="" type="submit" value="Wyślij">
+            <input class="fillin" name="" type="reset" value="Wyczyść">
 
             <textarea name="" type="" value="" rows="10" cols="50" placeholder="Dodatkowe informacje" required></textarea>
 
@@ -41,7 +41,8 @@
                 <option value="">Mężczyzna</option>
                 <option value="">Kobieta</option>
             </select>
-            <input list="strony" name="Strony">
+
+            <input class="fillin" list="strony" name="Strony">
             <datalist id="strony">
                 <option value="Nord"></option>
                 <option value="East"></option>
@@ -49,21 +50,18 @@
                 <option value="West"></option>
             </datalist>
 
-            <input type="radio" name="gender" value="male" checked><label class="radio">Male</label>
-            <input type="radio" name="gender" value="female"><label class="radio">Female</label>
-            <input type="radio" name="gender" value="other"><label class="radio">Other</label>
-
-
-
-
+            <input class="radiobuttons" type="radio" name="gender" value="male" checked><label>Male</label></br>
+            <input class="radiobuttons" type="radio" name="gender" value="female"><label>Female</label></br>
+            <input class="radiobuttons" type="radio" name="gender" value="other"><label>Other</label></br>
 
         </form>
-
 
     </main>
 
     <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores beatae dolor dolorum ducimus harum incidunt laudantium, magni nam neque optio perferendis quas quis quo sint soluta voluptate. Dolorem, iure.</lorum></aside>
+
     <footer>footer</footer>
+
 
 </div>
 </div>
